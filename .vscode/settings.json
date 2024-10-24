@@ -1,0 +1,11 @@
+{
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.indexing": true,
+  "python.analysis.packageIndexDepths": [
+    {
+      "name": "Django",
+      "includeAllSymbols": true,
+      "depth": 20
+    }
+  ],
+}

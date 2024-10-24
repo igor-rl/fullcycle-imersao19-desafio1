@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block title %}Bem-vindo ao Meu Blog{% endblock %}
+
+{% block content %}
+<div style="text-align: center;">
+  <img src="https://github.com/igor-rl/assets/raw/main/img/github-projetcs-header.jpg" alt="Blog Header"
+    style="max-width: 100%; height: auto;" />
+  <hr />
+
+  <div style="padding: 30px;">
+    <p style="font-size: 1.2em; margin: 20px 0;">
+      Este projeto é uma simulação de um pequeno blog, desenvolvido como parte do curso oferecido pela FullCycle. Aqui,
+      você encontrará uma listagem de posts, onde cada post pode ter uma ou mais tags associadas.
+    </p>
+  </div>
+
+  <div style="padding-inline: 30px;padding-bottom: 30px">Acesse a <a href="{% url 'admin:index' %}" target="_blank">área
+      administrativa</a>
+    para
+    gerenciar os posts e
+    tags.
+    <div>
+      Usuário: <strong>admin</strong> |
+      Senha: <strong>admin</strong>
+    </div>
+  </div>
+
+  <hr />
+
+  <div style="padding: 30px;">
+    <h2 style="color: darkgrey;">Características da aplicação</h2>
+    <ul style="list-style-type: none; padding: 0;">
+      <li>Aplicação desenvolvida com Django.</li>
+      <li>Banco de dados SQLite3.</li>
+      <li>Acesse a área de administrativa para gerenciar os Posts e Tags do blog.</li>
+      <li>Visualize os blogs na página de Posts e Tags</li>
+    </ul>
+  </div>
+
+  <hr />
+
+  <div style="padding: 30px;">
+    <h3 style="color: darkgrey">Uma aplicação desenvolvida com o apoio de</h3>
+    <img
+      src="https://events-fullcycle.s3.amazonaws.com/events-fullcycle/media/images/a06b6a97db354487b1ee6bee9ef9f123.svg"
+      alt="FullCycle" style="max-width: 100%; height: auto; margin-bottom: 20px" />
+    <p>
+      Repositório do projeto no <a href="https://github.com/igor-rl/fullcycle-imersao19-desafio1"
+        target="_blank">gitHub</a>.
+    </p>
+  </div>
+  <div style="padding: 20px;"></div>
+</div>
+{% endblock %}
